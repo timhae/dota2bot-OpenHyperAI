@@ -33,7 +33,23 @@ Customize.Localization = "en"
 -- Please note that it is not 100% guaranteed that the banned hero will not be picked; for example if you banned too many heroes 
 -- like near 100% of the heroes, bots will need to randomly pick heroes regardless of the ban list to continue the game.
 Customize.Ban = {
-    'example_npc_dota_hero_internal_name_to_ban',
+    'npc_dota_hero_chen',
+    'npc_dota_hero_keeper_of_the_light',
+    'npc_dota_hero_ancient_apparition',
+    'npc_dota_hero_phoenix',
+    'npc_dota_hero_tinker',
+    'npc_dota_hero_pangolier',
+    'npc_dota_hero_tusk',
+    'npc_dota_hero_visage',
+    'npc_dota_hero_void_spirit',
+    'npc_dota_hero_ember_spirit',
+    'npc_dota_hero_muerta',
+    'npc_dota_hero_marci',
+    'npc_dota_hero_primal_beast',
+    'npc_dota_hero_dark_willow',
+    'npc_dota_hero_elder_titan',
+    'npc_dota_hero_hoodwink',
+    'npc_dota_hero_wisp',
 }
 
 --[[
@@ -75,10 +91,10 @@ Customize.Weak_Penalty = { type = "exp", base = 0.6 }
 Customize.Strict_Ban_Match = true
 
 -- To allow bots do trash talking in different scenarios: got fb, killing a human, etc. Disable this also disables GPT chat.
-Customize.Allow_Trash_Talk = true
+Customize.Allow_Trash_Talk = false
 
 -- To allow bots response with GPT generated text to your chats in global channel. Disable Allow_Trash_Talk can disable this.
-Customize.Allow_AI_GPT_Response = true
+Customize.Allow_AI_GPT_Response = false
 
 -- Set the level of bots' trash talks. Disable Allow_Trash_Talk can disable this.
 -- 1 => no trash talks from ally bots, no taunt from enemy after it gets a kill. 2 => ally bots also trash talk to you, allow taunt from enemy after it gets a kill.
@@ -108,16 +124,16 @@ Customize.Fretbots = {
     Default_Difficulty = 2,
 
     -- Default ally bots bonus scale comparing to enemy bots, a number between: [0, 1]
-    Default_Ally_Scale = 0.5,
+    Default_Ally_Scale = 1,
 
     -- Set whether or not allowing the team to vote for difficulty. If false, will directly apply the default difficulty.
-    Allow_To_Vote = true,
+    Allow_To_Vote = false,
 
     -- Set to false disables all sounds from Fretbots mode
-    Play_Sounds = true,
+    Play_Sounds = false,
 
     -- Set to play chatwheel taunt sounds when human player died
-    Player_Death_Sound = true,
+    Player_Death_Sound = false,
 }
 
 -- Make bots think less, 0: fully think through, 1 to 10: think less and less frequently.

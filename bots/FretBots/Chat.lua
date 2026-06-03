@@ -22,7 +22,7 @@ function Chat:SendMessageToBackend(inputText, playerInfo)
         inputContent = {player = playerInfo, said = inputText}
     end
     local inputData = ConstructChatBotRequest(json.encode(inputContent))
-    Chat:SendHttpRequest('chat', inputData)
+    -- Chat:SendHttpRequest('chat', inputData)
 end
 
 function Chat:SendHttpRequest(api, inputData, callback)
